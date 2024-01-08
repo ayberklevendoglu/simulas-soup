@@ -68,11 +68,9 @@ Seasoning GetSeasoningInput()
 };
 
 
+(SoupType type,MainIngredient ingredient,Seasoning season) food = (GetSoupTypeInput(), GetMainIngInput(), GetSeasoningInput());
 
-
-(SoupType type,MainIngredient ingredient,Seasoning season) soup = (GetSoupTypeInput(), GetMainIngInput(), GetSeasoningInput());
-
-Console.WriteLine($"Congratz! You have made the {soup.season} {soup.ingredient} {soup.type}.");
+Console.WriteLine($"Congratz! You have made the {food.season} {food.ingredient} {food.type}.");
 
 enum SoupType 
 {
